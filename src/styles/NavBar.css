@@ -8,8 +8,10 @@
     height:90px;
     display:flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  
+   
 }
 
 Link{
@@ -17,5 +19,25 @@ Link{
 }
 
 h1{
-    color:white;
+    color:lemonchiffon;
+}
+
+button{
+    margin-right: 30px;
+   
+}
+
+.navbar h1{
+    font-family: 'Cinzel Decorative', serif;
+    margin-left:20px;
+}
+
+.navbar h1:hover{
+    color:rgb(42, 25, 3)
+}
+
+button:hover{
+    background-color:lemonchiffon;
+    color:rgb(42, 25, 3)
+
 }

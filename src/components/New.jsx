@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import"../styles/New.css";
+
 const API = import.meta.env.VITE_API_URL;
 
 export default function New() {
@@ -12,7 +14,6 @@ export default function New() {
         roast: "",
         price: 0,
         is_favorite: false,
-        name: "",
         note: "",
         grind: ""
 
@@ -20,7 +21,7 @@ export default function New() {
 
     const addCoffee = () => {
         const coffeeData = {
-            name: coffee.name,
+           
             name: coffee.name,
             origin: coffee.origin,
             roast: coffee.roast,
@@ -59,6 +60,7 @@ export default function New() {
 
     return (
         <div className="new">
+            <div className="formBody">
             <form onSubmit={handleSubmit} className="newForm">
                 <label htmlFor="name">Name:</label>
                 <input
@@ -66,7 +68,7 @@ export default function New() {
                     value={coffee.name}
                     type="text"
                     onChange={handleTextChange}
-                    placeholder="Name of Song"
+                    placeholder="Name of Coffee"
                     required
                 />
 
@@ -100,13 +102,6 @@ export default function New() {
                     required
                 />
 
-                <label htmlFor="isFavorite">Favorite:</label>
-                <input
-                    id="isFavorite"
-                    type="checkbox"
-                    onChange={handleCheckboxChange}
-                    checked={coffee.is_favorite ? "☕️" : ""}
-                />
 
                 <label htmlFor="note">Note:</label>
                 <input
@@ -127,13 +122,22 @@ export default function New() {
                     placeholder="Grind"
                     required
                 />
-                <br />
-                <br />
-                <button type="submit">Submit</button>
-                <Link to={`/coffee`}>
+                <label htmlFor="isFavorite">Favorite:</label>
+                <input
+                    id="isFavorite"
+                    type="checkbox"
+                    onChange={handleCheckboxChange}
+                    checked={coffee.is_favorite ? "☕️" : ""}
+                />
+              
+                <div className="submitButton">
+                <button type="submit" >Submit</button>
+                <Link to={`/coffee`} className="newLink" style={{ margin: '0', padding: '0' }}>
                     <button>↩︎</button>
                 </Link>
+                </div>
             </form>
+            </div>
         </div>
     )
 }
