@@ -43,8 +43,8 @@
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
-    padding-top: 50px;
+    align-items:start;
+    padding-top: 10px;
     
 }
 
