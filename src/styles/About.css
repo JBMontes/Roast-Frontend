@@ -35,6 +35,8 @@
     padding-top: 10px;
     border-radius:15%;
     background-color: rgba(255, 228, 196, 0.568);
+    animation-name: thinAir;
+    animation-duration:3s;
     
 
 }
@@ -55,4 +57,15 @@
 
 .about h3{
     color: saddlebrown
+}
+
+@keyframes thinAir {
+    from{
+        position:relative;
+        top:900px
+    }
+    to{
+        position:relative;
+        top:0px
+    }
 }

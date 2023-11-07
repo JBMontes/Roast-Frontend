@@ -1,3 +1,4 @@
+
 [
     {
         "name": "Jeremy Montes",
@@ -6,7 +7,6 @@
         "github": "https://github.com/JBMontes",
         "fact": "Haitian bred with a passion for knowledge, gaming, and fashion."
     },
-   
     {
         "name": "Oscar Quintanilla",
         "pic": "https://avatars.githubusercontent.com/u/127880951?v=4",
@@ -14,6 +14,6 @@
         "github": "https://github.com/OscarQ5",
         "fact": "Salvadorean backround with a passion for sports, cryptocurrency & gaming"
     }
- 
+   
 
 ]
