@@ -8,7 +8,7 @@ export default function New() {
 
     const navigate = useNavigate();
 
-    const [coffee, setCoffee] = useState({
+    const [coffees, setCoffees] = useState({
         name: "",
         origin: "",
         roast: "",
@@ -22,34 +22,34 @@ export default function New() {
     const addCoffee = () => {
         const coffeeData = {
            
-            name: coffee.name,
-            origin: coffee.origin,
-            roast: coffee.roast,
-            price: coffee.price,
-            is_favorite: coffee.is_favorite,
-            note: coffee.note,
-            grind: coffee.grind
+            name: coffees.name,
+            origin: coffees.origin,
+            roast: coffees.roast,
+            price: coffees.price,
+            is_favorite: coffees.is_favorite,
+            note: coffees.note,
+            grind: coffees.grind
         }
     
-        // fetch(`${API}/coffee`, {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json"
-        //     },
-        //     body: JSON.stringify(coffeeData),
-        // })
-        //     .then(() => {
-        //         navigate(`/coffee`);
-        //     })
-        //     .catch((error) => console.error("catch", error));
+        fetch(`${API}/coffees`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(coffeeData),
+        })
+            .then(() => {
+                navigate(`/coffees`);
+            })
+            .catch((error) => console.error("catch", error));
     };
 
     const handleTextChange = (event) => {
-        setCoffee({ ...coffee, [event.target.id]: event.target.value });
+        setCoffees({ ...coffees, [event.target.id]: event.target.value });
     };
 
     const handleCheckboxChange = () => {
-        setCoffee({ ...coffee, is_favorite: !coffee.is_favorite });
+        setCoffees({ ...coffees, is_favorite: !coffees.is_favorite });
     };
 
     const handleSubmit = (event) => {
@@ -65,7 +65,7 @@ export default function New() {
                 <label htmlFor="name">Name:</label>
                 <input
                     id="name"
-                    value={coffee.name}
+                    value={coffees.name}
                     type="text"
                     onChange={handleTextChange}
                     placeholder="Name of Coffee"
@@ -75,7 +75,7 @@ export default function New() {
                 <label htmlFor="origin">Origin:</label>
                 <input
                     id="origin"
-                    value={coffee.origin}
+                    value={coffees.origin}
                     type="text"
                     onChange={handleTextChange}
                     placeholder="Name of Origin"
@@ -85,7 +85,7 @@ export default function New() {
                 <label htmlFor="roast">Roast:</label>
                 <input
                     id="roast"
-                    value={coffee.roast}
+                    value={coffees.roast}
                     type="text"
                     onChange={handleTextChange}
                     placeholder="Name of Roast"
@@ -95,7 +95,7 @@ export default function New() {
                 <label htmlFor="price">Price:</label>
                 <input
                     id="price"
-                    value={coffee.price}
+                    value={coffees.price}
                     type="number"
                     onChange={handleTextChange}
                     placeholder="Price"
@@ -106,7 +106,7 @@ export default function New() {
                 <label htmlFor="note">Note:</label>
                 <input
                     id="note"
-                    value={coffee.note}
+                    value={coffees.note}
                     type="text"
                     onChange={handleTextChange}
                     placeholder="Note"
@@ -116,7 +116,7 @@ export default function New() {
                 <label htmlFor="grind">Grind:</label>
                 <input
                     id="grind"
-                    value={coffee.grind}
+                    value={coffees.grind}
                     type="text"
                     onChange={handleTextChange}
                     placeholder="Grind"
@@ -127,7 +127,7 @@ export default function New() {
                     id="isFavorite"
                     type="checkbox"
                     onChange={handleCheckboxChange}
-                    checked={coffee.is_favorite ? "☕️" : ""}
+                    checked={coffees.is_favorite ? "☕️" : ""}
                 />
               
                 <div className="submitButton">
