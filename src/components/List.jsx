@@ -20,10 +20,12 @@ export default function List() {
        <div className="coffeeList">
         <h1>Coffee List</h1>
         <div>
+            <div>
         <div className='list'>
             {coffees.map((beans) => {
                 return <CoffeeCard key={beans.id} beans={beans} />
             })}
+        </div>
         </div>
         </div>
         </div>
