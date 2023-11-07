@@ -10,7 +10,6 @@
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
-  
    
 }
 
@@ -24,6 +23,7 @@ h1{
 
 button{
     margin-right: 30px;
+    font-family: 'Noto Color Emoji', sans-serif;
    
 }
 
@@ -31,6 +31,7 @@ button{
     font-family: 'Cinzel Decorative', serif;
     margin-left:20px;
 }
+
 
 .navbar h1:hover{
     color:rgb(42, 25, 3)
@@ -40,4 +41,22 @@ button:hover{
     background-color:lemonchiffon;
     color:rgb(42, 25, 3)
 
+}
+
+span{
+    font-family: 'Noto Color Emoji', sans-serif;
+   margin:10px;
+}
+
+.h2Link:hover{
+    border:1px solid lemonchiffon;
+    background-color: blanchedalmond;
+    border-radius: 45px;
+}
+
+.h2Link{
+    /* border: 3px solid saddlebrown; */
+    /* background-color: rgba(255, 250, 205, 0.472); */
+    font-family: 'Noto Color Emoji', sans-serif;
+    margin:10px;
 }
