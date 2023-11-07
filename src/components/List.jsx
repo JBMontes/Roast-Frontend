@@ -1,6 +1,11 @@
 import CoffeeCard from "./CoffeeCard"
+import { useState,useEffect } from "react";
+import "../styles/List.css"
+
 export default function List() {
+
     const [coffees,setCoffees] = useState([])
+
     const API = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
@@ -12,10 +17,15 @@ export default function List() {
     
     
     return (
+       <div className="coffeeList">
+        Coffee List
+        <div>
         <div className='list'>
             {coffees.map((beans) => {
                 return <CoffeeCard key={beans.id} beans={beans} />
             })};
+        </div>
+        </div>
         </div>
     )
 }

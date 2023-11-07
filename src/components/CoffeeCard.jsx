@@ -1,4 +1,4 @@
-export default function CoffeeCard({ beans }) {
+export default function CoffeeCard({ beans} ) {
 
     return (
         <div className="card">
