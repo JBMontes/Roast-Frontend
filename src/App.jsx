@@ -6,6 +6,7 @@ import New from './components/New';
 import About from './pages/About';
 // import ListPage from './pages/ListPage';
 import List from './components/List';
+import Detail from './components/Detail';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/coffees' element={<List />} />
           <Route path='/coffees/new' element={<New />} />
           <Route path='/coffees/about' element={<About />} />
+          <Route path='/coffees/:id' element={<Detail />} />
         </Routes>
 
       </Router>

@@ -1,0 +1,17 @@
+.card p{
+    font-family: 'Kanit', sans-serif;
+    font-size: x-large;
+    color:lemonchiffon
+}
+
+.cardLink:hover{
+    
+    color:black;
+   
+    
+}
+
+.card{
+    border-right: 1px solid black;
+    border-radius:45px;
+}

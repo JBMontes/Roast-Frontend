@@ -18,12 +18,12 @@ export default function List() {
     
     return (
        <div className="coffeeList">
-        Coffee List
+        <h1>Coffee List</h1>
         <div>
         <div className='list'>
             {coffees.map((beans) => {
                 return <CoffeeCard key={beans.id} beans={beans} />
-            })};
+            })}
         </div>
         </div>
         </div>

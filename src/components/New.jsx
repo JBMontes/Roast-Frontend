@@ -12,23 +12,22 @@ export default function New() {
         name: "",
         origin: "",
         roast: "",
-        price: 0,
-        is_favorite: false,
         note: "",
-        grind: ""
+        grind: "",
+        price: 0,
+        is_favorite: false
 
     })
 
     const addCoffee = () => {
         const coffeeData = {
-           
             name: coffees.name,
             origin: coffees.origin,
             roast: coffees.roast,
-            price: coffees.price,
-            is_favorite: coffees.is_favorite,
             note: coffees.note,
-            grind: coffees.grind
+            grind: coffees.grind,
+            price: coffees.price,
+            is_favorite: coffees.is_favorite
         }
     
         fetch(`${API}/coffees`, {
@@ -92,16 +91,6 @@ export default function New() {
                     required
                 />
 
-                <label htmlFor="price">Price:</label>
-                <input
-                    id="price"
-                    value={coffees.price}
-                    type="number"
-                    onChange={handleTextChange}
-                    placeholder="Price"
-                    required
-                />
-
 
                 <label htmlFor="note">Note:</label>
                 <input
@@ -122,6 +111,17 @@ export default function New() {
                     placeholder="Grind"
                     required
                 />
+
+                <label htmlFor="price">Price:</label>
+                <input
+                    id="price"
+                    value={coffees.price}
+                    type="number"
+                    onChange={handleTextChange}
+                    placeholder="Price"
+                    required
+                />
+
                 <label htmlFor="isFavorite">Favorite:</label>
                 <input
                     id="isFavorite"
@@ -132,7 +132,7 @@ export default function New() {
               
                 <div className="submitButton">
                 <button type="submit" >Submit</button>
-                <Link to={`/coffee`} className="newLink" style={{ margin: '0', padding: '0' }}>
+                <Link to={`/coffees`} className="newLink" style={{ margin: '0', padding: '0' }}>
                     <button>↩︎</button>
                 </Link>
                 </div>

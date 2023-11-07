@@ -6,7 +6,7 @@ return(
     <div className="home">
     <h1>Welcome To Roast</h1>
    
-   
+  <Link to="/coffees"> <button>Show Me The Beans</button></Link>
         
     </div>
  
