@@ -10,8 +10,6 @@
   background-color: white;
   color: white;
   padding: 15px;
-  /* animation-name: imageShift;
-animation-duration: 14s ; */
   animation: imageShift 20s 3;
   animation-timing-function: linear;
 }
@@ -24,7 +22,7 @@ animation-duration: 14s ; */
 }
 
 @keyframes imageShift {
-    animation-timing-function: linear;
+    
   15% {
     background-image: url("https://images.unsplash.com/photo-1529576123454-a12c036db670?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
