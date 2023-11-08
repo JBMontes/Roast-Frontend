@@ -1,24 +1,20 @@
-.card p{
-    font-family: 'Kanit', sans-serif;
-    font-size: x-large;
-    color:lemonchiffon
+.card p {
+  font-family: "Kanit", sans-serif;
+  font-size: x-large;
+  color: lemonchiffon;
 }
 
-.cardLink:hover{
-    
-    color:black;
-   
-    
+.cardLink:hover {
+  color: black;
 }
 
-.card{
-    border-right: 1px solid black;
-    border-radius:45px;
-    min-width: 180px;
-    max-width: 180px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content:center;
-    
+.card {
+  border-right: 1px solid black;
+  border-radius: 45px;
+  min-width: 180px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,62 +1,74 @@
-.navbar{
-    position:fixed;
-    top: 0px;
-    left:0px;
-    width:100%;
-    border: 2px solid, black;
-    background-color:rgb(100, 60, 7);
-    height:90px;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-   
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  border: 2px solid, black;
+  background-color: rgb(100, 60, 7);
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-Link{
-    text-decoration: none;
+Link {
+  text-decoration: none;
 }
 
-h1{
-    color:lemonchiffon;
+h1 {
+  color: lemonchiffon;
 }
 
-button{
-    margin-right: 30px;
-    font-family: 'Noto Color Emoji', sans-serif;
-   
+button {
+  margin-right: 30px;
+  font-family: "Noto Color Emoji", sans-serif;
 }
 
-.navbar h1{
-    font-family: 'Cinzel Decorative', serif;
-    margin-left:20px;
+.navbar h1 {
+  font-family: "Cinzel Decorative", serif;
+  margin-left: 20px;
+  animation: logo-spin infinite 20s linear;
 }
 
-
-.navbar h1:hover{
-    color:rgb(42, 25, 3)
-}
-
-button:hover{
-    background-color:lemonchiffon;
-    color:rgb(42, 25, 3)
+.navbar h1:hover {
+  color: rgb(42, 25, 3);
+  animation:none
 
 }
 
-span{
-    font-family: 'Noto Color Emoji', sans-serif;
-   margin:10px;
+button:hover {
+  background-color: lemonchiffon;
+  color: rgb(42, 25, 3);
 }
 
-.h2Link:hover{
-    border:1px solid lemonchiffon;
-    background-color: blanchedalmond;
-    border-radius: 45px;
+span {
+  font-family: "Noto Color Emoji", sans-serif;
+  margin: 10px;
 }
 
-.h2Link{
-    /* border: 3px solid saddlebrown; */
-    /* background-color: rgba(255, 250, 205, 0.472); */
-    font-family: 'Noto Color Emoji', sans-serif;
-    margin:10px;
+.h2Link:hover {
+  border: 1px solid lemonchiffon;
+  background-color: blanchedalmond;
+  border-radius: 45px;
 }
+
+.h2Link {
+  /* border: 3px solid saddlebrown; */
+  /* background-color: rgba(255, 250, 205, 0.472); */
+  font-family: "Noto Color Emoji", sans-serif;
+  margin: 10px;
+}
+
+.favCount:hover{
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }

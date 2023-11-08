@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate,useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../styles/Detail.css"
 
@@ -24,7 +24,7 @@ export default function Detail() {
                 navigate(`/coffees`);
             })
             .catch((error) => console.error(error));
-        }
+    }
 
     return (
         <div className="detail">
@@ -36,18 +36,18 @@ export default function Detail() {
                 <h2>Note: {coffees.note}</h2>
                 <h2>Grind: {coffees.grind}</h2>
                 <h2>Price: ${coffees.price}.00 / lb</h2>
-                <h2>Favorite:  {coffees.is_favorite ? "☕️":"❌"}</h2>
+                <h2>Favorite:  {coffees.is_favorite ? "☕️" : "❌"}</h2>
 
-            <div className="detailButton">
-                <Link to={`/coffees/${id}/edit`}>
-                    <button>Edit</button>
-                </Link>
-                <Link to={`/coffees`}>
-                    <button>↩︎</button>
-                </Link>
-                <button onClick={handleDelete}>Delete</button>
+                <div className="detailButton">
+                    <Link to={`/coffees/${id}/edit`}>
+                        <button>Edit</button>
+                    </Link>
+                    <Link to={`/coffees`}>
+                        <button>↩︎</button>
+                    </Link>
+                    <button onClick={handleDelete}>Delete</button>
 
-            </div>
+                </div>
             </div>
 
         </div>
