@@ -18,7 +18,7 @@ export default function List() {
     
     return (
        <div className="coffeeList">
-        <h1>Coffee List</h1>
+        <h1 className='listTitle'>Coffee List</h1>
         <div>
             <div>
         <div className='list'>
