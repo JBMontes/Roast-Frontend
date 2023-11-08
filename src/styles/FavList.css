@@ -1,0 +1,43 @@
+.list {
+    border: 3px solid black;
+    background-color: rgba(139, 69, 19, 0.558);
+    width: 90%;
+    height: max-content;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .coffeeListF h1 {
+    color: black;
+    border: 1px solid saddlebrown;
+    background-color: lemonchiffon;
+    border-radius: 45px;
+    padding: 10px;
+    /* display:flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position:fixed; */
+  }
+  
+  .coffeeListF {
+    background-image: url("https://images.unsplash.com/photo-1615110523386-ecd1ca123ecb?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD");
+    background-size: cover;
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    height: 89%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -51,14 +51,23 @@ span {
   border: 1px solid lemonchiffon;
   background-color: blanchedalmond;
   border-radius: 45px;
+  /* display:flex;
+  flex-direction: row; */
+
 }
 
 .h2Link {
 
   font-family: "Noto Color Emoji", sans-serif;
   margin: 10px;
+    
+    
 }
 
+.favCount{
+    border:1px solid black;
+
+}
 
 span{
     color:lemonchiffon;
@@ -74,3 +83,5 @@ span{
       transform: rotateY(360deg);
     }
   }
+
+  

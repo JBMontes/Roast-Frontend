@@ -8,6 +8,7 @@ import About from './pages/About';
 import List from './components/List';
 import Detail from './components/Detail';
 import Edit from './components/Edit';
+import FavList from './components/FavList';
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/coffees/about' element={<About />} />
           <Route path='/coffees/:id' element={<Detail />} />
           <Route path='/coffees/:id/edit' element={<Edit />} />
+          <Route path='/coffees/favorite' element={<FavList />} />
         </Routes>
 
       </Router>

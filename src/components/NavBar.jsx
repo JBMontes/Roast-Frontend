@@ -6,9 +6,9 @@ export default function NavBar() {
         <div className="navbar">
             <Link to="/"> <h1>Roast </h1> </Link>
 
-            <Link to='/coffees/about'> <h2 className='h2Link'>🧔🏿‍♂️    🧔🏻</h2></Link>
+            <Link to='/coffees/about' className='h2Link'> <h2 className='h2Icon' >🧔🏿‍♂️    🧔🏻</h2></Link>
 
-            <FavCount className="favCount"/>
+            <Link to='/coffees/favorite'><FavCount className="favCount"/></Link>
 
             <Link to="/coffees/new"> <button>New Coffee</button></Link>
 
