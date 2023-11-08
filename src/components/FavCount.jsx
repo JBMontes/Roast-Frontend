@@ -24,7 +24,7 @@ export default function FavCount() {
     return (
         <div className="favTotal">
 
-            <h2>⭐️☕️ : {total}</h2>
+            <h2>⭐️☕️ : <span>{total}</span></h2>
 
         </div>
 
