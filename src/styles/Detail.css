@@ -22,10 +22,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 85%;
 }
 
 .detailButton {
   position: relative;
   margin-right: -50px;
+  padding-bottom: 30px;
 }
